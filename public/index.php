@@ -1,4 +1,4 @@
-<?php
+ <?php 
 require '../vendor/autoload.php';
 
 $app = new \Slim\Slim(array(
@@ -18,5 +18,15 @@ $view->parserExtensions = array(
 $app->get('/', function () use ($app) {
     $app->render('index.html.twig');
 })->name('home');
+
+$app->get('/about/', function () use ($app) {
+    $app->render('about.html.twig');
+})->name('about');
+
+$app->get('/hello/:name', function ($name) use ($app) {
+    $app->render('hello.html.twig', array(
+            'name' => $name
+        ));
+})->name('hello');
 
 $app->run();
