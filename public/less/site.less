@@ -1,7 +1,105 @@
-/* ============== HEADER ============== */
+/* HEADER
+======================================== */
+/* savakts no navbar-default klases */
+.navbar-styled {
+    .navbar-toggle {
+        border-color: @navbar-default-toggle-border-color;
+        &:hover,
+        &:focus {
+          background-color: @navbar-default-toggle-hover-bg;
+        }
+        .icon-bar {
+          background-color: @navbar-default-toggle-icon-bar-bg;
+        }
+    }
+
+    .navbar-collapse {
+        padding-top: 58px;
+    }
+    .navbar-nav {
+        display: inline-block;
+        text-align:center;
+    }
+    
+    
+    .navbar-form {
+        padding:0;
+    }
+    
+    .social-buttons {
+        margin-left:3px;
+        margin-right:3px;
+        display: inline-block;
+        vertical-align:middle;
+    }
+    
+    @media (min-width:@grid-float-breakpoint-max){
+        .social-buttons {
+            float:right;
+            position:absolute;
+            bottom:0;
+            right:0;   
+        }
+        .navbar-styled .navbar-form .form-control {
+            float:right;
+            width:130px;
+        }
+    }
+    @media (max-width:@grid-float-breakpoint-max){
+        .social-buttons {
+            float:right;
+        }
+    }
+}
+
+
+
+.navbar-brand {
+    padding:0;
+    height:0;
+}
+
+.header-container {
+    background-color: @header-bg-color;
+    background-image: url(@header-bg-img);
+    color: #fff;
+}
+/* Header menu copy paste
+---------------------------------------- */
+.simple-menu.header-menu{
+    margin-bottom: 20px;
+
+    > li {
+        border-left: 1px solid @headings-color;
+
+        &:first-child {
+            border-left: none;
+
+            a {
+                padding-left: 0;
+            }
+        }
+
+        &:last-child {
+            a {
+                padding-right: 0;
+            }
+        }
+    }
+
+    a {
+        padding: 0px 15px;
+        color: @headings-color;
+        text-transform: uppercase;
+        font-family: @headings-font-family;
+        font-size: @font-size-large;
+    }
+}
 
 /* ============== CONTENT  ============== */
-
+.container {
+    
+}
 /* ============== FOOTER ============== */
 .footer-container {
     min-height: @footer-height -20px;
@@ -25,7 +123,6 @@
     text-transform: uppercase;    
     padding-top:20px;
     text-align:right;
-    
 }
 
 .foot-nav {
