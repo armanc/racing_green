@@ -19,12 +19,37 @@
     .navbar-nav {
         display: inline-block;
         text-align:center;
+        position:relative;
+        float:none;
+        padding-left:210px;
+        li {
+            display: block;
+            float:right;
+            text-transform:uppercase;
+            a {
+                font-family: 'Oswald', Helvetica, Arial, sans-serif;
+                font-size: 17px;
+                padding: 5px 12px;
+                color:white;
+            }       
+            a:hover {
+                background: rgba(0, 0, 0, 0.4);
+            }
+        }
     }
     
+        .active {
+        text-decoration:underline;
+    }
     
     .navbar-form {
         padding:0;
+        input {
+            width:130px;
+            color:black;
+        }
     }
+    
     
     .social-buttons {
         margin-left:3px;
@@ -36,27 +61,56 @@
     @media (min-width:@grid-float-breakpoint-max){
         .social-buttons {
             float:right;
+            
             position:absolute;
             bottom:0;
             right:0;   
+            li {
+                display:inline-block;
+                margin-left:10px;
+            }
         }
-        .navbar-styled .navbar-form .form-control {
+        .navbar-form .form-control {
             float:right;
             width:130px;
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+            border:0;
         }
     }
     @media (max-width:@grid-float-breakpoint-max){
         .social-buttons {
             float:right;
+            position:absolute;
+            bottom:0;
+            right:0;            
         }
+        .navbar-form .form-control {
+            float:right;
+            width:130px; 
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+            border:0;
+            
+        }
+    }
+    
+    .input-group {
+        position:absolute;
+        right:10px;
+        top:10px;
+        width:130px;
+        background-color: rgba(0, 0, 0, 0.4);
+    
     }
 }
 
 
 
 .navbar-brand {
-    padding:0;
-    height:0;
+    display:inline-block;
+    padding:4px;
+    
 }
 
 .header-container {
@@ -96,10 +150,49 @@
     }
 }
 
-/* ============== CONTENT  ============== */
-.container {
+/* ============== CONTENT ============== */
+
+body > .container {
+    
+    padding-top:0px;
     
 }
+
+/* about company sadaļa*/
+
+.myh3 {
+    padding-top:10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size:18px;
+    color:black;
+    line-height:1.1;
+}
+.myList {
+    padding:0;
+    margin:0;
+}
+.myList li:first-child {
+    border-left:0px;
+}
+.myList li {
+    display:inline-block;
+    padding:0px 15px;
+    margin:15px 0px;
+    border-left: 1px solid #959d03;
+}
+.myList li a {
+    color: @headings-color;
+    font-family: @headings-font-family;
+    font-size: 18px;
+}
+
+.styled-container {
+    padding:15px;
+    background-color: #e4e4e4;
+    background-image: url('data:image/gif;base64,R0lGODlhBAAEAKECAOTk5Pf39////////yH5BAEKAAIALAAAAAAEAAQAAAIGBBKGqAkFADs=');
+}
+
 /* ============== FOOTER ============== */
 .footer-container {
     min-height: @footer-height -20px;

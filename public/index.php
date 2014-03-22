@@ -24,19 +24,19 @@ $app->get('/', function () use ($app) {
 })->name('home');
 
 $app->get('/company', function () use ($app) {
-    $app->render('pages/company.html.twig', array("active" => "company"));
+    $app->render('/pages/company.html.twig', array("active" => "company"));
 })->name('company');
 
 $app->get('/products', function () use ($app) {
-    $app->render('pages/products.html.twig', array("active" => "products"));
+    $app->render('/pages/products.html.twig', array("active" => "products"));
 })->name('products');
 
 $app->get('/product', function () use ($app) {
-    $app->render('pages/product.html.twig', array("active" => "product"));
+    $app->render('/pages/product.html.twig', array("active" => "product"));
 })->name('product');
 
 $app->get('/contacts', function () use ($app) {
-    $app->render('pages/contacts.html.twig', array("active" => "contacts"));
+    $app->render('/pages/contacts.html.twig', array("active" => "contacts"));
 })->name('contacts');
 
 // lai twig varetu izmantot kaut kadus mainigos, mainigie ir japadod (ar array)

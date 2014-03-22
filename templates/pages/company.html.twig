@@ -1,13 +1,82 @@
 {% extends "index.html.twig" %}
 
 {% block content %}
-    <div class="container">
-      <div class="page-header">
-        <h1>COMPANY daļa</h1>
-      </div>
-      <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body > .container</code>.</p>
-      <p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-offset-1">
+            <ul class="myList">
+                <li><a href="#about">ABOUT US</a></li>
+                <li><a href="#delivery">DELIVERY</a></li>
+                <li><a href="#terms">TERMS & CONDITIONS</a></li>
+            </ul>
+        </div>
     </div>
+    <div class="row">
+        <div class="col-xs-12 col-md-8 col-lg-6 col-lg-offset-1">
+            <img src="http://lorempixel.com/620/420/business/" alt="about company" class="img-responsive">
+        </div>
+        <div class="col-xs-12 col-md-4 col-lg-4">
+            <h2 class="myh2" id="about">ABOUT OUR COMPANY</h2>
 
-   
+            <p><strong>Integer vitae commodo elit. Pellentesque augue quam, ullamcorper eu urna ac, adipiscing placerat elit. Donec et accumsan quam, eget rutrum nisl. Pellentesque posuere velit ut vehicula porttitor.</strong></p>
+            <p>Proin molestie purus sit amet lacus dictum, a molestie enim tincidunt. Curabitur dignissim sed elit eu congue. In hac habitasse platea dictumst. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam facilisis elit id mauris egestas lobortis sit amet non velit.
+                Integer sodales leo enim, et laoreet leo egestas at. Ut malesuada, libero nec molestie posuere, augue nibh pulvinar tellus, non tincidunt leo est eget nibh.</p>
+        </div>
+    </div>
+</div>
+<div class="styled-container">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-11 col-lg-11 col-lg-offset-1">
+
+                <h2 class="myh2" id="delivery">DELIVERY</h2>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-1">
+                <p>
+                    Quisque at velit a diam viverra eleifend. Sed nec facilisis metus, id luctus leo. Integer dignissim sem sit amet eleifend convallis. Cras elementum volutpat lobortis. Nunc cursus eu est id varius.
+                    Sed quis nisi ac augue pharetra euismod. Fusce lobortis purus fringilla turpis sodales, non aliquet purus lacinia.
+                    Maecenas mollis lobortis ligula sit amet facilisis. Sed sed ipsum eros. Ut suscipit, erat vel aliquet tincidunt, sem metus laoreet quam, eu suscipit felis est sit amet enim.
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-6 col-lg-5 col-lg-offset-1">
+                <p>
+                    Pellentesque a feugiat orci. Quisque non consequat risus. Nulla semper orci sit amet dictum cursus.
+                    Maecenas et nisl eget nibh rhoncus tristique sed id urna. Aenean tincidunt laoreet tellus, sed commodo augue. Quisque ut feugiat eros. Donec sollicitudin eu leo nec tincidunt. Mauris interdum condimentum libero sed vehicula. Pellentesque a facilisis sem.
+                    Mauris eu sodales felis, et malesuada magna. Donec blandit pulvinar felis a interdum. Pellentesque quis elementum ipsum, eget commodo leo. Duis vitae elementum nunc, a interdum purus. Proin dui leo, scelerisque ut libero eget, viverra sagittis dui.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-lg-10 col-lg-offset-1 clearfix">
+            <h2 class="myh2" id="terms">TERMS AND CONDITIONS</h2>
+            <h3 class="myh3">GENERAL INFORMATION</h3>
+            <p>1.1 Fusce id tempus nunc, a posuere libero. Pellentesque vulputate non urna sed varius.
+                1.2 Maecenas ac orci metus. Nam faucibus vehicula urna vel aliquet. Nulla facilisi. Integer volutpat at urna id sagittis.
+                1.3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porta, felis ut cursus pharetra, ante erat fermentum libero, eget laoreet dui erat nec leo.
+                1.4 Morbi a ipsum eget risus condimentum vulputate a ut dolor.
+                1.5 Nunc viverra varius felis, in semper lacus pharetra id. Donec accumsan odio nec est convallis, ac sollicitudin orci luctus.
+                1.6 Aliquam eget arcu sapien. Nullam bibendum sagittis nisl eget dictum. Vestibulum iaculis volutpat odio. Integer sed metus fermentum, dapibus eros non, bibendum turpis.
+                1.7 Vestibulum egestas et velit vitae ornare. Aliquam vulputate dignissim risus, mattis ullamcorper massa tincidunt vitae. Sed vel enim porta, pulvinar nisi vitae, tempus enim.
+            </p>
+            <h3 class="myh3">REGISTRATION OF BIDDERS</h3>
+            <p>
+                2.1 Nullam viverra, enim in pharetra fringilla, velit lacus vulputate velit, quis facilisis risus purus vitae urna.
+                2.2 Curabitur nulla est, lobortis ac nibh ut, lacinia vulputate mi. Donec mollis odio sit amet ipsum mattis euismod. Quisque mi neque, aliquam vestibulum ligula ac, bibendum dignissim mauris.
+                2.2.1 Sed congue interdum turpis, vel mattis nibh ullamcorper et. Fusce sagittis urna eget feugiat tristique. Aenean non suscipit diam.
+                2.2.2 Morbi purus ligula, faucibus id libero sit amet, molestie dapibus leo. Aliquam eros nisl, euismod nec congue nec, elementum eget ipsum.
+                2.2.3 Nulla urna erat, tristique non ullamcorper quis, tincidunt sit amet tortor.
+                2.2.4 Aliquam lectus lorem, viverra et tortor quis, consectetur dapibus risus.
+                2.3 Donec in justo nibh. Sed ultrices iaculis imperdiet. Vestibulum ligula est, gravida vitae facilisis non, eleifend sed odio. Morbi et faucibus justo.
+                2.4 Praesent interdum vulputate arcu et rhoncus. Suspendisse interdum, arcu a laoreet hendrerit, metus metus lobortis odio, quis aliquet urna elit ullamcorper ante. Praesent sollicitudin accumsan risus. Vivamus in bibendum nisl. Maecenas non nibh tellus.
+                2.5 Phasellus consequat mauris ac commodo tincidunt. Mauris consequat leo non odio mollis dictum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                2.6 Sed non augue vestibulum, congue nulla faucibus, viverra nibh. Proin eget purus justo. Nullam bibendum id nibh eget imperdiet.
+                2.7 Aenean tempus scelerisque aliquet. Fusce sollicitudin elit at ipsum venenatis, eu convallis turpis scelerisque.
+            </p>
+        </div>
+    </div>
+</div>
+
 {% endblock %}
