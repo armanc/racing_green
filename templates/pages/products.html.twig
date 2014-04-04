@@ -1,31 +1,32 @@
 {% extends "index.html.twig" %}
 
 {% block content %}
-    <div class="container">
-      <div class="page-header">
-        <h1>PRODUCTS daļa</h1>
-      </div>
-      <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body > .container</code>.</p>
-      <p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p>
+    <div class="container my-container">
+        <div class="row">
+            <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+                <table class="filters-block table table-bordered table-condensed">
+                    <caption>
+                        <span>
+                            <i class="fa fa-filter"></i>
+                        </span>
+                        <span class="filters-container">
+                            <span class="btn btn-xs btn-link">Subaru<i class="close">x</i></span>
+                            <span class="btn btn-xs btn-link">Impreza<i class="close">x</i></span>
+                            <span class="btn btn-xs btn-link">2007<i class="close">x</i></span>
+                            <span class="btn btn-xs btn-link">Opel<i class="close">x</i></span>
+                        </span>
+                    </caption>
+                    <tbody>
+                        <tr>
+                            <td>Make</td>
+                            <td>Model</td>
+                            <td>Mark</td>
+                            <td>Fuel type</td>
+                            <td>Transmission</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
-
-    <div class="row">
-
-        <div class="col-md-3 offset-1">.col-md-1</div>
-        <div class="col-md-3 offset-1">.col-md-1</div>
-        <div class="col-md-3">.col-md-1</div>
-      </div>
-      <div class="row">
-        <div class="col-md-8">.col-md-8</div>
-        <div class="col-md-4">.col-md-4</div>
-      </div>
-      <div class="row">
-        <div class="col-md-4">.col-md-4</div>
-        <div class="col-md-4">.col-md-4</div>
-        <div class="col-md-4">.col-md-4</div>
-      </div>
-      <div class="row">
-        <div class="col-md-6">.col-md-6</div>
-        <div class="col-md-6">.col-md-6</div>
-      </div>
 {% endblock %}

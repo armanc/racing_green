@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+  {#  <link rel="shortcut icon" href="../../assets/ico/favicon.ico">#}
+
+        <title>{% block page_title %}{% endblock %}</title>
+        <!-- fonts headeriem -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,700,600' rel='stylesheet' type='text/css'>
+        <!-- fonts lapas textam-->
+        <link href='http://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+        <link href="http://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
+        <script>
+            less = {
+                env: "development"
+            };
+        </script>
+        <link rel="stylesheet/less" type="text/css" href="/less/init.less" />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js"></script>
+
+        <!-- Just for debugging purposes. Don't actually copy this line! -->
+        <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+     {% block header %}
+        {% include "parts/header.html.twig" %}
+    {% endblock %}
+
+    {% block content %}
+        <div class="styled-container carousel-container">
+            <div class="container-fluid">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    </ol>
+
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <img src="/img/sports5.jpg" alt="...">
+                            <div class="carousel-caption">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-10 col-lg-8 col-lg-offset-1">
+                                            <div class="carousel-caption-h3">
+                                                COMPANY OFFERS
+                                            </div>
+                                            <div class="carousel-caption-content">
+                                                Our company offers a full-scale car part services, from Engine start button to the full engine itself. Just state your need and our customer service will come back to you part preposition in the chortest time posible. 
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <img src="img/sports2.jpg" alt="...">
+                            <div class="carousel-caption">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-10 col-lg-8 col-lg-offset-1">
+                                            <div class="carousel-caption-h3">
+                                                PART 2
+                                            </div>
+                                            <div class="carousel-caption-content">
+                                                Part 2 start button to the full engine itself. Just state your need and our customer service will come back to you part preposition in the chortest time posible. 
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item">
+                            <img src="/img/sports9.jpg" alt="...">
+                            <div class="carousel-caption">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-12 col-sm-10 col-lg-8 col-lg-offset-1">
+                                            <div class="carousel-caption-h3">
+                                                PART 3 
+                                            </div>
+                                            <div class="carousel-caption-content">
+                                                Part afsf fa afad fs f our company offers a full-scale car part services, from Engine start button to the full engine itself. Just state your need and our customer service will come back to you part preposition in the chortest time posible. 
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                        <span class="fa fa-chevron-left"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                        <span class="fa fa-chevron-right"></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container content-container">
+            <div class="row">
+                <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+                    <div class="container-fluid">
+                        <div class="col-xs-12 col-sm-4">
+                            <h2 class="myTitle"><i class="img-icon img-icon-select"></i>Car part selection</h2>
+                            <p class="myDescription">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <h2 class="myTitle"><i class="img-icon img-icon-gear"></i>Consulting & delivery</h2>
+                            <p class="myDescription">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <h2 class="myTitle"><i class="img-icon img-icon-person"></i>Service & installation</h2>
+                            <p class="myDescription">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom</p>
+                        </div>             
+                    </div>       
+                </div>   
+            </div>
+        </div>
+        
+        <div class="styled-container content-container">
+            <div class="container simple-thumbnails">
+                <div class="row">
+                    <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+                        <div class="container-fluid">
+                            <div class="col-xs-12"><h1 class="myh1">Latest products in our group</h1></div>
+                            <div class="col-xs-12 col-sm-3">
+                                <div class="thumbnail">
+                                    <a href=""><img src="img/1.jpg"></a>
+                                    <div class="caption">
+                                        <h5>2009 Volkswagen Passat B6</h5>
+                                        <p>Nka bha bla bla bla blaa aff afabahadfds </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3">
+                                <div class="thumbnail">
+                                    <a href=""><img src="img/2.jpg"></a>
+                                      <div class="caption">
+                                        <h5>2014 Ford Focus</h5>
+                                        <p>Nka bha bla bla bla blaa aff afabahadfds </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3">
+                                <div class="thumbnail">
+                                    <a href=""><img src="img/3.jpg"></a>
+                                      <div class="caption">
+                                        <h5>2006 Opel Zafira</h5>
+                                        <p>Nka bha bla bla bla blaa aff afabahadfds </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xs-12 col-sm-3">
+                                <div class="thumbnail">
+                                    <a href=""><img src="img/4.jpg"></a>
+                                      <div class="caption">
+                                        <h5>2011 Volkswagen Polo</h5>
+                                        <p>Nka bha bla bla bla blaa aff afabahadfds </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>  
+        </div>
+       {% endblock %}
+
+    {% block footer %}
+        {% include "parts/footer.html.twig" %}
+    {% endblock %}
+
+        <!-- Bootstrap core JavaScript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    </body>
+</html>

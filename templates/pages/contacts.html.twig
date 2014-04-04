@@ -1,129 +1,97 @@
 {% extends "index.html.twig" %}
 
 {% block content %}
-    <div class="container">
-      <div class="page-header">
-        <h1>CONTACTS daļa</h1>
-      </div>
-      <p class="lead">Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML and CSS. A fixed navbar has been added with <code>padding-top: 60px;</code> on the <code>body > .container</code>.</p>
-      <p>Back to <a href="../sticky-footer">the default sticky footer</a> minus the navbar.</p>
-      
-      
-      
-      <!-- Button trigger modal -->
-<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
-  Launch demo modal
-</button>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+   <script>
+      function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: new google.maps.LatLng(44.5403, -78.5463),
+          zoom: 8,
+          mapTypeId: google.maps.MapTypeId.ROADMAP
+        }
+        var map = new google.maps.Map(map_canvas, map_options)
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <div class="container my-container">
+        <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-4">
+                        <h2 class="myh2">CONTACT INFORMATION</h2>
+                        <br>
+                        <p><strong>Adress:</strong></p>
+                        <p>Phasellus consequat mauris ac commodo tincidunt.</p>
+                        <p><strong>Phone:</strong> +357 25 812 537</p>
+                        <p><strong>Fax:</strong> +357 25 812 557</p>
+                        <br>
+                        <p><strong>Company Requisittes:</strong></p>
+                        <p>SIA "Moroz&Co"<br>
+                            Dzirnavu iela 31-72, LV-1010, Riga, Latvija<br>
+                            Reģ. Nr.: 40103418451<br>
+                            A/S Swedbank<br>
+                            LV30HABA0551123413498</p>
 
-<!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-8">
+                        <div id="map_canvas"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
-  </div>
-</div>
+    <div class="styled-container my-container">
+        <div class="container">
+            <div class="col-xs-12 col-lg-10 col-lg-offset-1">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <h2 class="myh2">INQUIRY FORM</h2>
+                            <p>Aliquam lectus lorem, viverra et tortor quis, consectetur dapibus risus. Donec in justo nibh. Sed ultrices iaculis imperdiet. Vestibulum ligula est, gravida vitae facilisis non, eleifend sed odio. Morbi et faucibus justo.</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="form-group">
+                                <input type="text" class="form-control my-input" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control my-input" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control my-input" placeholder="Subject">
+                            </div>
 
-<div class="dropdown">
-  <a data-toggle="dropdown" href="#">Dropdown</a>
-  <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-        <li><a href="#">dasddas 1</a></li>
-      <li><a href="#">dasddas 2</a></li>
-      <li><a href="#">dasddas 3</a></li>
-      <li><a href="#">dasddas 4</a></li>
-      <li><a href="#">dasddas 5</a></li>     
-  </ul>
-</div>
+                            <div class="container-fluid my-container-fluid">
+                                <div class="form-group col-xs-6">
 
-<button class="btn btn-danger">sadfadsfd</button>
-<!-- otrs variants -->
-<div class="dropdown">
-  <a id="dLabel" role="button" data-toggle="dropdown" data-target="#" href="/page.html">
-    Dropdown <span class="caret"></span>
-  </a>
+                                    <input type="text" class="form-control my-input small-input" placeholder="Captcha">
 
-    <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
-        <li><a href="#">dasddas 1</a></li>
-      <li><a href="#">dasddas 2</a></li>
-      <li><a href="#">dasddas 3</a></li>
-      <li><a href="#">dasddas 4</a></li>
-      <li><a href="#">dasddas 5</a></li> 
-  </ul>
-</div>
+                                </div>
+                                <div class="form-group col-xs-6">
 
+                                    <input type="text" class="form-control my-input small-input" placeholder="Captcha 2">
 
+                                </div>
 
-
-
-<ul class="nav nav-tabs" id="myTab">
-  <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
-  <li><a href="#profile" data-toggle="tab">Profile</a></li>
-  <li><a href="#messages" data-toggle="tab">Messages</a></li>
-  <li><a href="#settings" data-toggle="tab">Settings</a></li>
-</ul>
-
-<div class="tab-content">
-  <div class="tab-pane active" id="home">SADALJA HOME asfda sfdasffdsadffdsafa fdsadffdas safs fasdfafs fasd fsa</div>
-  <div class="tab-pane" id="profile">SADALJA PROFILS afsafds  af fasfd</div>
-  <div class="tab-pane" id="messages">SADALJA MESSAGES fasfsad f sfafsd afsf fsa sffa fa</div>
-  <div class="tab-pane" id="settings">SADALJA SETTINGs yeah fdsaf fds fsaffas fffasf fa zffsa fsdafd</div>
-</div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="form-group">
+                                <textarea class="form-control my-input" placeholder="Message" rows="6"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="button" class="btn btn-default btn-block my-btn">Send Inquiry!</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
-
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-  </ol>
-
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner">
-    <div class="item active">
-      <img src="http://lorempixel.com/output/sports-q-c-867-480-7.jpg" alt="...">
-      <div class="carousel-caption">
-          <h2>asasdfsdfsadfds asfd</h2>
-      </div>
+        </div>
     </div>
-    <div class="item">
-      <img src="http://lorempixel.com/output/nature-q-c-867-480-10.jpg" alt="...">
-      <div class="carousel-caption">
-          <h2>asasdfsdfsadfds asfd</h2>
-      </div>
-    </div>
-    <div class="item">
-      <img src="http://lorempixel.com/output/abstract-q-c-867-480-7.jpg" alt="...">
-      <div class="carousel-caption">
-          <h2>asasdfsdfsadfds asfd</h2>
-      </div>
-    </div>
-  </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left"></span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right"></span>
-  </a>
-</div>
-
-
-      
-      
-</div>
 
 
 
